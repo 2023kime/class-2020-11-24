@@ -1,5 +1,6 @@
 ---
 title: "Week 11, Day 3"
+author: "Esther Kim"
 output: html_document
 ---
 
@@ -17,6 +18,7 @@ week_11 <- shaming %>%
   mutate(treatment = fct_relevel(treatment, "Control")) %>% 
   mutate(solo = ifelse(hh_size == 1, TRUE, FALSE)) %>% 
   select(-general_04, -no_of_names, -birth_year, -hh_size) 
+
 ```
 
 
